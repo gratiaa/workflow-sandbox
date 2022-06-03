@@ -1,0 +1,13 @@
+name: challenge-3
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: gratiaa/custom-action@main
+      with:
+        args: 'FIXED'
+        
